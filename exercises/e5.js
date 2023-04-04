@@ -3,7 +3,6 @@
 // Finish each exercise below.
 // You can use ANY type of function syntax you want: named, arrow, or expression with anonymous function.
 
-
 /** =========================
  * Create a getDiffTwentySeven(num) function to return the difference between a given number and 27
  * If the number is greater than 27 return double the absolute difference.
@@ -12,7 +11,13 @@
  */
 
 // Your code goes here...
-
+const getDiffTwentySeven = (num) => {
+  if (num > 27) {
+    return (num - 27) * 2;
+  } else {
+    return 27 - num;
+  }
+}
 
 
 
@@ -25,7 +30,7 @@
 
 // Your code goes here
 
-
+const sumOfTwoIntegers = (num1, num2) => num1 === num2 ? (num1 + num2) * 3 : (num1 + num2);
 
 
 /** =========================
@@ -39,7 +44,15 @@
 
 // Your code goes here...
 
-
+const isOneOfThemOrTheirSumIsFourty = (num1, num2) => {
+  if (num1 === 40 || num2 === 40) {
+    return true;
+  } else if (num1 + num2 === 40) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
 // === TEST YOURSELF ===
